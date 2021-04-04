@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from functools import reduce
 
 def str2num(s):
+    # eval()函数用来执行一个字符串表达式，并返回表达式的值。
     return eval(s)
 
 def calc(exp):

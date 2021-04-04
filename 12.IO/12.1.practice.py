@@ -1,7 +1,10 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-fpath = r'C:\Users\peiroJack\Desktop\python\11.IO\timezone.txt'
+from os import path
+
+print(path.dirname(__file__)) #获取当前路径
+fpath = path.dirname(__file__)+r'/timezone.txt'
+
 with open(fpath, 'r') as f:
     str = f.read()
     print(str)
