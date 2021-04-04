@@ -3,6 +3,7 @@ __author__ = 'HuangPeirong'
 
 
 class Screen(object):
+
 	@property
 	def width(self):
 		return self._width

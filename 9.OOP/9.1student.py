@@ -30,4 +30,3 @@ lisa.print_score()
 print(bart)
 print(Student)
 print(bart._Student__name)
-

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from enum import Enum, unique
@@ -13,14 +12,14 @@ class Student(object):
         if isinstance(gender, Gender):
             self._gender = gender
         elif isinstance(gender, str):
-            if not gender in Gender.__members__: raise ValueError('\'gende\'参数非法')
+            if not gender in Gender.__members__: raise ValueError(r"'gender'参数非法")
             self._gender = Gender[gender]
         elif isinstance(gender, int):
-            if not gender in set(g.value for g in Gender): raise ValueError('\'gende\'参数非法')
+            if not gender in set(g for g in Gender.value):raise ValueError(r"'gender'参数非法")
             self._gender = Gender(gender)
         else:
-            raise ValueError('\'gende\'参数非法')
-    
+            raise ValueError(r"'gender'参数非法")
+
     @property
     def gender(self):
         return self._gender
